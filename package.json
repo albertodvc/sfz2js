@@ -1,0 +1,19 @@
+{
+  "name": "sfz2js",
+  "version": "0.0.1",
+  "description": "sfz file parser",
+  "main": "parser.js",
+  "dependencies": {
+    "moo": "^0.5.1",
+    "nearley": "^2.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "nearleyc grammar.ne -o grammar.js",
+    "preparse": "npm run compile",
+    "parse": "node parser.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
