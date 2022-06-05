@@ -30,8 +30,10 @@ let lexer = moo.compile({
         'offset',
         'end',
         'volume',
+        'pan',
+        'transpose',
     ],
-    path: /(?:[a-zA-Z0-9_-]+(?:\/?[a-zA-Z0-9_-]*)*)(?:\.[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]|\/)/,
+    path: /(?:[a-zA-Z0-9_-\s]+(?:\/?[a-zA-Z0-9_-\s]*)*)(?:\.[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]|\/)/,
     string: /[a-zA-Z0-9_]+/
 })
 
